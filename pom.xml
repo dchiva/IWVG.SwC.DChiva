@@ -159,9 +159,9 @@
 
 	<developers>
 		<developer>
-			<name>Nombre y Apellidos</name>
+			<name>David Chiva Villalba</name>
 			<id>***</id>
-			<email>***@alumnos.upm.es</email>
+			<email>d.chiva@alumnos.upm.es</email>
 			<organization>MIW UPM</organization>
 			<roles>
 				<role>Architect</role>
