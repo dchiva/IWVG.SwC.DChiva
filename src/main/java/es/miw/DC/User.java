@@ -1,5 +1,7 @@
 package es.miw.DC;
 
+import java.util.Calendar;
+
 public class User {
 
     private int number;
@@ -37,6 +39,14 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }
+    
+    public void setBirthYear(int year){
+    	
+    }
+    
+    public int getAge(){
+    	return 0;
     }
 
 }

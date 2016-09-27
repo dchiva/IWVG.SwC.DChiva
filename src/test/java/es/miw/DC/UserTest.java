@@ -2,33 +2,46 @@ package es.miw.DC;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class UserTest {
 
+	private User user;
+
+    @Before
+    public void before() {
+        user = new User(1,"Hola","Amigos");
+    }
+
     @Test
     public void testFullName() {
-        fail("Not yet implemented");
+    	assertEquals("Hola Amigos", user.fullName());
     }
 
     @Test
     public void testInitials() {
-        fail("Not yet implemented");
+    	assertEquals("H.", user.initials());
     }
 
     @Test
     public void testGetNumber() {
-        fail("Not yet implemented");
+    	assertEquals(1, user.getNumber());
     }
 
     @Test
     public void testGetName() {
-        fail("Not yet implemented");
+    	assertEquals("Hola", user.getName());
     }
 
     @Test
     public void testGetFamilyName() {
-        fail("Not yet implemented");
+    	assertEquals("Amigos", user.getFamilyName());
     }
 
+    @Test
+    public void testGetAge() {
+    	user.setBirthYear(1994);
+    	assertEquals(22, user.getAge());
+    }
 }

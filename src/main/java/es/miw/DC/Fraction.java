@@ -61,4 +61,16 @@ public class Fraction {
         return denominator;
     }
     
+    public void sumInt(int number){
+    	
+    }
+    
+    public void restarInt(int number){
+    	
+    }
+    
+    public void sumFraction(Fraction fraction){
+
+    }
+    
 }

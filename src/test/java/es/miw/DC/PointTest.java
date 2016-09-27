@@ -50,5 +50,12 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testMovePoint(){
+    	this.pt.movePoint(2, 2);;
+        assertEquals(4, pt.getX());
+        assertEquals(5, pt.getY());
+    }
 
 }

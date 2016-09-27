@@ -37,6 +37,10 @@ public class Point {
     public int getY() {
         return this.y;
     }
+    
+    public void movePoint(int xDistance, int yDistance){
+    	
+    }
 
     @Override
     public String toString() {
