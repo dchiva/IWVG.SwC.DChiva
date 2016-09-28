@@ -1,0 +1,1 @@
+Ante cualquier duda consultar la [wiki del proyecto](https://github.com/dchiva/IWVG.SwC.DChiva/wiki/Pr%C3%A1ctica-de-software-colaborativo)
