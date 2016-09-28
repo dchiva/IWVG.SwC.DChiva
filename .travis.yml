@@ -7,7 +7,6 @@ branches:
   only:
     - master
     - develop
-    - feature#00
     
 notifications:
   email:
