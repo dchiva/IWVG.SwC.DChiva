@@ -38,7 +38,13 @@ public class DecimalCollection {
     }
     
     public double smaller(){
-    	return 0.0;
+        double smaller = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < smaller) {
+                smaller = item;
+            }
+        }
+        return smaller;
     }
 
 }
