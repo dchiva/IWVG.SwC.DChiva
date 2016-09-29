@@ -70,6 +70,9 @@ public class Fraction {
     }
     
     public void sumFraction(Fraction fraction){
+        
+        this.numerator = this.numerator*fraction.getDenominator()+fraction.getNumerator()*this.denominator;
+        this.denominator = this.denominator*fraction.getDenominator();        
 
     }
     
