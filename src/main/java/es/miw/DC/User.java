@@ -9,6 +9,8 @@ public class User {
     private String name;
 
     private String familyName;
+    
+    private int birthYear;
 
     public User(int number, String name, String familyName) {
         this.number = number;
@@ -42,11 +44,11 @@ public class User {
     }
     
     public void setBirthYear(int year){
-    	
+    	this.birthYear = year;
     }
     
     public int getAge(){
-    	return 0;
+    	return Calendar.getInstance().get(Calendar.YEAR) - this.birthYear;
     }
 
 }
