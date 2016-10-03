@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class PointTest {
-
     private Point pt;
 
     @Before
@@ -18,13 +17,6 @@ public class PointTest {
     public void testPuntoIntInt() {
         assertEquals(2, pt.getX());
         assertEquals(3, pt.getY());
-    }
-    
-    @Test
-    public void testPuntoInt() {
-        pt = new Point(2);
-        assertEquals(2, pt.getX());
-        assertEquals(2, pt.getY());
     }
 
     @Test
@@ -50,12 +42,17 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+
+    @Test
+    public void testToString() {
+        assertEquals("Point[2,3]", pt.toString());
+    }
     
     @Test
-    public void testMovePoint(){
-    	this.pt.movePoint(2, 2);;
-        assertEquals(4, pt.getX());
-        assertEquals(5, pt.getY());
+    public void testModifyXY (){
+    	this.pt.modifyXY(20, 30);
+    	assertEquals(20, pt.getX());
+        assertEquals(30, pt.getY());
     }
 
 }

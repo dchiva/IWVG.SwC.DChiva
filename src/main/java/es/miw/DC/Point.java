@@ -1,7 +1,6 @@
 package es.miw.DC;
 
 public class Point {
-    
     private int x, y;
 
     public Point(int x, int y) {
@@ -17,6 +16,14 @@ public class Point {
         this(0, 0);
     }
 
+    public int getX() {
+        return this.x;
+    }
+
+    public int getY() {
+        return this.y;
+    }
+
     public double module() {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
@@ -30,16 +37,9 @@ public class Point {
         this.y -= origin.getY();
     }
     
-    public int getX() {
-        return this.x;
-    }
-
-    public int getY() {
-        return this.y;
-    }
-    
-    public void movePoint(int xDistance, int yDistance){
-    	
+    public void modifyXY (int xnew, int ynew){
+    	this.x= xnew;
+    	this.y= ynew;
     }
 
     @Override
