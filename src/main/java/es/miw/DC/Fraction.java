@@ -65,7 +65,7 @@ public class Fraction {
     	this.numerator += this.denominator * number;
     }
     
-    public void Fraction restarInt (Fraction f){
+    public void restarInt (int number){
     	Fraction aux = new Fraction();
         aux.numerator = this.numerator * f.denominator - this.denominator * f.numerator;
         aux.denominator = this.denominator * f.denominator;

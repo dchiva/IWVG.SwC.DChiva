@@ -47,10 +47,4 @@ public class FractionTest {
     	assertEquals(1.1666, this.fraction.decimal(), 10e-5);
     }
 
-    @Test
-    public void testRestar(){
-    	Fraction f = new Fraction (1,2);
-    	assertEquals(18, integerFraction.restar(f).getNumerator());
-    	assertEquals(4, integerFraction.restar(f).getDenominator());
-    }
 }
