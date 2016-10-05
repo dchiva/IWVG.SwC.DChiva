@@ -66,7 +66,7 @@ public class Fraction {
     }
     
     public void restarInt (int number){
-    	this.numerator - this.denominator * number;
+    	this.numerator=this.numerator - this.denominator * number;
     }
     
     public void sumFraction(Fraction fraction){
